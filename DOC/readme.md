@@ -1,6 +1,10 @@
 
 # LSL-Mouse documentation
 
+<!--
+cat DOC/readme.md | /Users/dm/bin/gh-md-toc -
+ -->
+
 * [Command line arguments](#command-line-arguments)
 * [Output in CSV files](#output-in-csv-files)
 	* [Header block](#header-block)
