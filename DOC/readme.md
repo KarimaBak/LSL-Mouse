@@ -2,6 +2,8 @@
 # LSL-Mouse documentation
 
 <!--
+To re generate toc
+cd DOC
 cat DOC/readme.md | /Users/dm/bin/gh-md-toc -
  -->
 
@@ -36,6 +38,7 @@ java -jar LSL-Mouse.jar -borderColor blue -cycleDuration 10
 |  centerY      		|  pixel | center of circle (origin is top-left) **supersedes cornerY**
 |  externalRadius 	|  pixel |
 |  internalRadius  	|  pixel |
+| indexOfDifficulty |  ????	 | ID form the [Steering Law](https://en.wikipedia.org/wiki/Steering_law)	**supersedes internalRadius** 
 |  borderRadius			|  pixel |
 |  cursorRadius 		|  pixel |
 |  borderColor 		  |  RGB   |
@@ -107,7 +110,7 @@ The parameters in the `configuration_line` detail the current configuration of t
 |  screenHeight 		|  pixel | :warning: origin is top-left of screen
 |  cornerX      		|  pixel | top-left corner of largest circle (deprecated)
 |  cornerY      		|  pixel | top-left corner of largest circle (deprecated)
-|  centerX      		|  pixel | center of circles 
+|  centerX      		|  pixel | center of circles
 |  centerY      		|  pixel | center of circles
 |  externalRadius 	|  pixel |
 |  internalRadius  	|  pixel |
@@ -293,7 +296,7 @@ limitInternal = limitInternal + configuration.getCursorRadius() ;
 limitExternal = limitExternal - configuration.getCursorRadius() ;
 
 // border is drawn inside the circle: remove border of external circle
-limitExternal = limitExternal - configuration.getBorder();
+limitExternal = limitExternal - configuration.getBorderRadius();
 
 boolean isInside = (d < limitExternal & d > limitInternal);
 ```
