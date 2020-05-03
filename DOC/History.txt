@@ -1,0 +1,31 @@
+2019-08-23 : V 1.0.0
+First usable version. 
+
+2019-12-27 : 
+- LSL initialisation in outputMouse 
+- LSL MoCap stream  https://github.com/sccn/xdf/wiki/MoCap-Meta-Data
+- Target in the center, during rest periods 
+- Application starts with a small window, to avoid the initial white screen  
+- isInside takes into account circle border width  
+- Updated readme with command description
+
+2019-12-30 :
+- type "c" to display the configuration 
+
+2020-01-25
+- display on second (last) screen
+
+2020-04-29
+- CSV output : data.csv + maker.csv (similar to LSL streams)
+- LSL is optional: if no Liblsl*.* found, no streaming, only data.csv
+- Updated authorship
+- Refactoring for more readable cycling and message 
+
+2020-05-03 : V 1.1.0
+- bug corrections
+- readme.md for documentation 
+- indexOfDifficulty added in command line and parmaeters
+
+Developed by Pierre JEAN (IMT Mines Alès) and Denis MOTTET (Université Montpellier). 
+
+
