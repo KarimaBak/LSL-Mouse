@@ -38,7 +38,7 @@ java -jar LSL-Mouse.jar -borderColor blue -cycleDuration 10
 |  centerY      		|  pixel | center of circle (origin is top-left) **supersedes cornerY**
 |  externalRadius 	|  pixel |
 |  internalRadius  	|  pixel |
-| indexOfDifficulty |  ????	 | ID form the [Steering Law](https://en.wikipedia.org/wiki/Steering_law)	**supersedes internalRadius** 
+| indexOfDifficulty |  ????	 | ID form the [Steering Law](https://en.wikipedia.org/wiki/Steering_law)	**supersedes internalRadius**
 |  borderRadius			|  pixel |
 |  cursorRadius 		|  pixel |
 |  borderColor 		  |  RGB   |
@@ -74,7 +74,7 @@ The header block is **identical** in all CSV files corresponding to the same rec
 The `configuration_line` (L1) consists in a collection of name-value pairs, where pairs are separated by `';'` (semicolon), within which name and value are separated by `' '` (space).  
 An exemple of the (long) first line is:
 ```
-screenWidth 1440;screenHeight 856;cornerX 372;cornerY 80;centerX 720;centerY 428;externalRadius 348;internalRadius 268;borderRadius 1;cursorRadius 16;borderColor java.awt.Color[r=255,g=255,b=255];backgroundColor java.awt.Color[r=0,g=0,b=0];cursorColorRecord java.awt.Color[r=255,g=0,b=0];cursorColorWait java.awt.Color[r=255,g=255,b=0];autoStart 3600;cycleMaxNumber 6;cycleDuration 3;software LSL-mouse;version 1.1.0;task CircularTarget;isWithLSL true
+screenWidth 1440;screenHeight 856;cornerX 372;cornerY 80;centerX 720;centerY 428;externalRadius 348;internalRadius 268;borderRadius 1;cursorRadius 16;indexOfDifficulty 41.04123168732198;borderColor java.awt.Color[r=255,g=255,b=255];backgroundColor java.awt.Color[r=0,g=0,b=0];cursorColorRecord java.awt.Color[r=255,g=0,b=0];cursorColorWait java.awt.Color[r=255,g=255,b=0];autoStart 3600;cycleMaxNumber 6;cycleDuration 3;software LSL-mouse;version 1.1.0;task CircularTarget;isWithLSL true
 ````
 After parsing the previous `configuration_line`, we get :
 ```
@@ -88,6 +88,7 @@ externalRadius = 348
 internalRadius = 268
 borderRadius = 1
 cursorRadius = 16
+indexOfDifficulty = 41.04123168732198
 borderColor = java.awt.Color[r=255,g=255,b=255]
 backgroundColor = java.awt.Color[r=0,g=0,b=0]
 cursorColorRecord = java.awt.Color[r=255,g=0,b=0]
@@ -115,6 +116,7 @@ The parameters in the `configuration_line` detail the current configuration of t
 |  externalRadius 	|  pixel |
 |  internalRadius  	|  pixel |
 |  borderRadius			|  pixel |
+| indexOfDifficulty | ?      | ID = A / W in the [Steering Law](https://en.wikipedia.org/wiki/Steering_law)
 |  borderColor 		  |  RGB  |
 |  backgroundColor 	|  RGB |
 |  cursorRadius 		|  pixel |
