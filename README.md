@@ -6,8 +6,8 @@ Data is also saved in `data.csv` and `marker.csv` (same directory).
 
 Requirements :
 - Java 8 (or newer): https://www.java.com/fr/download/  
-- LSL-Mouse.jar: in [RELEASE](/RELEASE/)
-- for LSL streaming :
+- LSL-Mouse.jar: download the last release (see in [RELEASE](/RELEASE/)) and expand it 
+- Optional, but necessary for LSL streaming :
 	- download the liblsl the `liblsl*.*` corresponding to your OS (liblsl32.dll should work on any windows OS)  
 	https://github.com/sccn/liblsl/releases
 	- **Make sure you have `LSL-Mouse.jar` and `liblslxxx.zzz` in the same directory**
@@ -17,7 +17,7 @@ Launch :
 
 Console use :   
 - `cd ` to the directory where LSL-Mouse.jar is located    
-- `java -jar LSL-Mouse`   
+- `java -jar LSL-Mouse.jar`   
 - Command line options :  
 	- `java -jar LSL-Mouse.jar -h`
 
