@@ -6,7 +6,7 @@ Data is also saved in `data.csv` and `marker.csv` (same directory).
 
 Requirements :
 - Java 8 (or newer): https://www.java.com/fr/download/  
-- LSL-Mouse.jar: download the last release (see in [RELEASE](/RELEASE/)) and expand it 
+- LSL-Mouse.jar: download the last release (see in [RELEASE](/RELEASE/)) and expand it
 - Optional, but necessary for LSL streaming :
 	- download the liblsl the `liblsl*.*` corresponding to your OS (liblsl32.dll should work on any windows OS)  
 	https://github.com/sccn/liblsl/releases
@@ -29,7 +29,7 @@ User input: press the following key
 
 -----  
 
-More detailed information in the `DOC` folder.   
+More detailed information: see in [DOC](/DOC/).  
 
 -----  
 Developed by Pierre JEAN (IMT Mines Alès) and Denis MOTTET (Université Montpellier).
