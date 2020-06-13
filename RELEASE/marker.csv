@@ -1,0 +1,9 @@
+screenWidth 1350;screenHeight 699;cornerX 406;cornerY 80;centerX 675;centerY 349;externalRadius 269;internalRadius 189;borderRadius 1;cursorRadius 16;indexOfDifficulty 30.48013297950948;borderColor java.awt.Color[r=255,g=255,b=255];backgroundColor java.awt.Color[r=0,g=0,b=0];cursorColorRecord java.awt.Color[r=255,g=0,b=0];cursorColorWait java.awt.Color[r=255,g=255,b=0];autoStart 3600;cycleMaxNumber 6;cycleDuration 20;software LSL-mouse;version 1.1.0;task CircularTarget;isWithLSL false
+2020-06-13 12:12:21.974
+
+2020-06-13 12:12:24.412,1592043144412,KeyTyped=32 DoCycleChange
+2020-06-13 12:12:24.412,1592043144412,DoCycleChange:DoStartCycleTimedSequence
+2020-06-13 12:12:24.413,1592043144413,DoCycleChange:DoRecord RecordDone=0 PauseDone=0 ToDo=6
+2020-06-13 12:12:29.481,1592043149481,KeyTyped=32 DoCycleChange
+2020-06-13 12:12:29.482,1592043149482,DoCycleChange:DoPause RecordDone=1 PauseDone=0 ToDo=6
+2020-06-13 12:12:29.926,1592043149926,KeyTyped=113 WINDOW_CLOSING
