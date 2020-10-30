@@ -7,10 +7,9 @@ First stable release
   - bug correction
   - readme.md for documentation
   - indexOfDifficulty added in command line and parameters
-* 2020-06-02
-	- Windows executable : solves install difficulties on W10 (thanks to Germain FAITY, Univ. Montpellier)
-* 2020-06-04
-	- Windows executable added in release
+* 2020-06-13
+  - Windows executable added: solves install difficulties on W10 (thanks to Germain FAITY, Univ. Montpellier)	
+  
 -----  
 
 More detailled information: see in [DOC](/../DOC/).  
