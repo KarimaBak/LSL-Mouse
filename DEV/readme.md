@@ -54,7 +54,7 @@ My solution is to :
 - get the unsigned difference in angle (do not care if moving clockwise or not)
 - take care of 'jumps' around 0 with atan...
 
-``` Java
+``` java
 private double phaseAngleDistance(int cX, int cY, int pX, int pY) {
 // translate current XY to center of circle
 int Xc = configuration.getCenterX() - cX;
