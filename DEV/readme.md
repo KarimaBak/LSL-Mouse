@@ -71,12 +71,11 @@ int Yp = configuration.getCenterY() - pY;
 double Ac = Math.atan2(Yc, Xc);
 double Ap = Math.atan2(Yp, Xp);
 // get the unsigned difference in angle (do not care if moving clockwise or not)
-double angle = Math.abs(Ac - Ap); // angular distance is unsigned...
+double angle = Math.abs(Ac - Ap);
 // cancel angle jumps around horizontal
 if (angle > Math.PI) {
   angle = 2 * Math.PI - angle;
 }
-
 return angle ;
 }
 
@@ -98,6 +97,7 @@ return angle ;
   - Bug corrections:
     - Effective tolerance is now computed with cursor radius
 
+
 ## V 1.2.0 release candidate 4
 
 * 2020 Nov 08 :  
@@ -107,6 +107,7 @@ return angle ;
   - Added radius limits without cursor size in configuration
     - create `radiusInternalLimit` and `radiusExternalLimit` and initialisation
     - rewrite `drawEffectiveTolerance` in `DoubleCircle` using radius limits
+    - rewrite
 - Bug corrections:
   - do not draw effective tolerance if radius was not initialized (`R <= 0`)
 
