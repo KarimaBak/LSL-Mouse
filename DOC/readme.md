@@ -52,6 +52,28 @@ java -jar LSL-Mouse.jar -borderColor blue -cycleDuration 10
 RGB should be a valid color name such as {blue, red, white, yellow}
 https://docs.oracle.com/javase/8/docs/api/java/awt/Color.html
 
+
+To allow for multiple run of LSL-Mouse without scratching the previous output files, one needs to rename the output files. This is easily done within a script.
+
+With Windows OS, a typical `LSL-Mouse.bat` file reads:
+```
+cd "C:\"
+java -jar LSL-Mouse.jar -cycleDuration 20 -cursorRadius 20 -cycleMaxNumber 3
+rename data.csv data_%date:~-4,4%%date:~-10,2%%date:~-7,2%_%time:~0,2%%time:~3,2%%time:~6,2%.csv
+rename marker.csv marker_%date:~-4,4%%date:~-10,2%%date:~-7,2%_%time:~0,2%%time:~3,2%%time:~6,2%.csv
+pause
+```
+
+With *nix OS, a typical `LSL-Mouse.sh` file reads :
+
+```
+cd ~/
+java -jar LSL-Mouse.jar -cycleDuration 20 -cursorRadius 20 -cycleMaxNumber 3
+cp marker.csv marker.$(date "+%Y.%m.%d-%H.%M.%S").csv
+cp marker.csv marker.$(date "+%Y.%m.%d-%H.%M.%S").csv
+```
+
+
 # Output in CSV files
 LSL-Mouse CSV output consist in 2 files :
 - `data.csv`: the mouse coordinate over time

@@ -1,8 +1,14 @@
 
 # LSL-Mouse/DEV
 
-## V 1.2.0 release candidate
-Error rate display added  
+## History
+
+
+### V 1.2.0 release candidate 1
+
+
+
+#### Error rate display added  
 
 `class PerformanceAtTask` computes the effective performance at each new sample
 
@@ -42,11 +48,10 @@ effectiveTolerance = Math.sqrt(2 * Math.PI * Math.E) * radiusStd;
 
 nbSample = currentNbSample;
 
-//System.out.println( nbSample + ","+ X + "," + Y + "," + radius + "," + radiusMean + "," + radiusSumS + "," + radiusStd);			  
-
 }
 ```
 
+#### Angular metrics
 One tricky part is to properly compute the angular metrics...
 My solution is to :
 - shift (translate) X,Y to center of circle
@@ -71,7 +76,7 @@ double angle = Math.abs(Ac - Ap); // angular distance is unsigned...
 if (angle > Math.PI) {
   angle = 2 * Math.PI - angle;
 }
-// System.out.println(Xc + "," + Yc + "," + Xp + "," + Yp + "," + Ac + "," + Ap  + "," + angle);
+
 return angle ;
 }
 
@@ -79,10 +84,32 @@ return angle ;
 
 
 
-## History
+## V 1.2.0 release candidate 2
 
-* 2020-01-29 :  
-  - type 'w' to display the "effective target width
+* 2020 Oct 30 :  
+  - type 'w' to display the effective target width
+  - Phase angle is now computed and displayed
+
+## V 1.2.0 release candidate 3
+
+* 2020 Nov 04 :  
+  - Effective tolerance is displayed by trial  
+  - Central target during rest is suppressed
+  - Bug corrections:
+    - Effective tolerance is now computed with cursor radius
+
+## V 1.2.0 release candidate 4
+
+* 2020 Nov 08 :  
+- Added a histogram of radius by trial
+- Refactoring:
+  - Added `isWithPauseTarget` in configuration   
+  - Added radius limits without cursor size in configuration
+    - create `radiusInternalLimit` and `radiusExternalLimit` and initialisation
+    - rewrite `drawEffectiveTolerance` in `DoubleCircle` using radius limits
+- Bug corrections:
+  - do not draw effective tolerance if radius was not initialized (`R <= 0`)
+
 
 
 More detailled information: see in [DOC](/../DOC/).  
