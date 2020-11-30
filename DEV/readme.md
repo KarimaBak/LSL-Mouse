@@ -116,4 +116,4 @@ return angle ;
 More detailled information: see in [DOC](../DOC).  
 
 -----  
-Developed by Pierre JEAN (IMT Mines Alès) and Denis MOTTET (Univ. Montpellier).
+Developed by Pierre JEAN (IMT Mines Alès) and Denis MOTTET (Univ. Montpellier) in collaboration with Makii MUTHALIB and Karima BAKHTI (CHU Montpellier) for the ReArm project (PHRIP-18-0731) funded by the French Ministry of Health..
