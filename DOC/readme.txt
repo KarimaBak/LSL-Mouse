@@ -13,8 +13,8 @@ Launch :
 -- double click LSL-Mouse.jar, this should do it... 
 
 Console use : 
-1°) cd to the directory where LSL-Mouse.jar is located 
-2°) java -jar LSL-Mouse
+1Â°) cd to the directory where LSL-Mouse.jar is located 
+2Â°) java -jar LSL-Mouse
 
 Command line options : java -jar LSL-Mouse.jar -h 
 
@@ -23,5 +23,5 @@ User input: press the following key
 - q : quit
 - c : window message showing configuration
 
-Developed by Pierre JEAN (IMT Mines Alès) and Denis MOTTET (Université Montpellier). 
+Developed by Pierre JEAN (IMT Mines AlÃ¨s) and Denis MOTTET (UniversitÃ© Montpellier) in collaboration with Makii MUTHALIB and Karima BAKHTI (CHU Montpellier) for the ReArm project (PHRIP-18-0731) funded by the French Ministry of Health.. 
 
