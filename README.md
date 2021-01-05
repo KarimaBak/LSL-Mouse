@@ -43,3 +43,6 @@ More detailed information: see in [DOC](/DOC/).
 
 -----  
 Developed by Pierre JEAN (IMT Mines Alès) and Denis MOTTET (Université Montpellier) in collaboration with Makii MUTHALIB and Karima BAKHTI (CHU Montpellier) for the ReArm project (PHRIP-18-0731) funded by the French Ministry of Health.
+
+Cite as
+Denis Mottet, Pierre Jean, Germain Faity, Karima Bakhti, & Makii Muthalib. (2020, November 30). KarimaBak/LSL-Mouse-: LSL-Mouse App (Version V1.0). Zenodo. http://doi.org/10.5281/zenodo.4297676
